@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from "./img/logo.svg";
+import yoga from "./img/yoga.svg";
+import swim from "./img/swim.svg";
+import cycling from "./img/cycling.svg";
+import lifting from "./img/lifting.svg";
+import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav direction="nav" data={<> <img src={logo} alt="" /><a href="/">Accueil</a><a href="/">Profil</a><a href="/">Réglage</a><a href="/">Communauté</a> </>}/>
+      <Nav direction="nav--vertical" data={<><img src={yoga} alt="" /><img src={swim} alt="" /><img src={cycling} alt="" /><img src={lifting} alt="" /> <p>Copyright Sportsee 2020</p> </> }/>
     </div>
   );
 }
