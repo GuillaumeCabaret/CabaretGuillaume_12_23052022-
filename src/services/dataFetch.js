@@ -25,4 +25,17 @@
     return userActivity;
 }
 
-export { getData, getActivity }
+/**
+ * Gets user average sessions from the API
+ *
+ * @param {string} id User id
+ * @returns {object} Response
+ */
+ async function getAverageSession(id) {
+    let userAverage = await fetch(`http://localhost:3000/user/${id}/average-sessions`)
+        .then(response => response.json())
+        .then(responseData => { return responseData.data })
+    return userAverage;
+}
+
+export {getActivity, getAverageSession, getData }

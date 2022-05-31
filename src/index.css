@@ -91,6 +91,12 @@
   grid-area: a;
 }
 
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  grid-area: c;
+}
+
 .data {
   margin-left: 120px;
   align-items: center;
@@ -98,6 +104,28 @@
   grid-template-columns: 1.5fr 0.5fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a c" "b c";
+}
+
+.chart {
+  width: 258px;
+  height: 263px;
+  background-color: blue;
+}
+.chart__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "average performance score";
+  grid-area: b;
+}
+
+.line {
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #FF0000;
+  padding: 0 7px;
+  grid-area: average;
 }
 
 * {
