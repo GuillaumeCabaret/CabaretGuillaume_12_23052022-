@@ -43,6 +43,63 @@
   margin-top: 100px;
 }
 
+.card {
+  border-radius: 5px;
+  background-color: #FBFBFB;
+  width: 208px;
+  height: 100px;
+  padding-left: 10px;
+  margin: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "a b" "a c";
+}
+.card img {
+  grid-area: a;
+  align-self: center;
+  height: 48px;
+  width: 48px;
+}
+.card__title {
+  align-self: end;
+  font-weight: bold;
+}
+.card__subtitle {
+  font-size: 8pt;
+  font-weight: 500;
+  color: #74798C;
+  align-self: flex-start;
+}
+
+.dashboard__greeting {
+  text-align: left;
+  margin-left: 120px;
+}
+.dashboard__greeting span {
+  color: red;
+}
+.dashboard__message {
+  text-align: left;
+  margin-left: 120px;
+}
+
+.activity {
+  width: 635px;
+  height: 260px;
+  grid-area: a;
+}
+
+.data {
+  margin-left: 120px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a c" "b c";
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }

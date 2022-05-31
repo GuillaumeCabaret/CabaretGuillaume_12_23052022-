@@ -1,0 +1,32 @@
+.dashboard {
+    &__greeting {
+        text-align: left;
+        margin-left: 120px;
+
+        span{
+            color: red;
+        }
+    }
+
+    &__message {
+        text-align: left;
+        margin-left: 120px;
+    }
+}
+
+.activity {
+    width: 635px;
+    height: 260px;
+    grid-area: a;
+}
+
+.data {
+    margin-left: 120px;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: 1.5fr 0.5fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "a c"
+    "b c";
+}

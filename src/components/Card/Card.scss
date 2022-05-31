@@ -1,0 +1,33 @@
+.card {
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    width: 208px;
+    height: 100px;
+    padding-left: 10px;
+    margin: 20px;
+    display: grid; 
+    align-items: center;
+    grid-template-columns: 0.5fr 1.5fr; 
+    grid-template-rows: 0.5fr 0.5fr; 
+    grid-template-areas: 
+    "a b"
+    "a c";
+
+    img {
+        grid-area: a;
+        align-self: center;
+        height: 48px;
+        width: 48px;
+    }
+
+    &__title {
+        align-self: end;
+        font-weight: bold ;
+    }
+    &__subtitle{
+        font-size: 8pt;
+        font-weight: 500 ;
+        color: #74798C;
+        align-self: flex-start;
+    }
+}
