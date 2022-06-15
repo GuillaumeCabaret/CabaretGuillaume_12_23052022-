@@ -37,8 +37,8 @@ function Activity(props) {
                 <XAxis dataKey="id"/>
                 <YAxis orientation="right"/>
                 <Tooltip content={<ActivityTooltip />} />
-                <Bar dataKey="kilogram" fill="#282D30" barSize={10} />
-                <Bar dataKey="calories" fill="#E60000" barSize={10}/>
+                <Bar dataKey="kilogram" fill="#282D30" barSize={10} radius={[10, 10, 0, 0]}  />
+                <Bar dataKey="calories" fill="#E60000" barSize={10} radius={[10, 10, 0, 0]} />
                 <text x="10" y="10" dominantBaseline="hanging" fontSize="16" fontWeight="bold">Activité Quotidienne</text>  
                 <Legend verticalAlign="top" align="right" iconType="circle" height={40}/>
             </BarChart>

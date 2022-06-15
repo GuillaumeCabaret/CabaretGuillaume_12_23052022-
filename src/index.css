@@ -80,7 +80,7 @@
 
 .score {
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 35px);
   left: calc(50% - 30px);
 }
 .score__text {

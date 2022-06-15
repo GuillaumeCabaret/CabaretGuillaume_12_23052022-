@@ -93,7 +93,7 @@ function AverageSession(props) {
                 {/* <YAxis/> */}
                 <Tooltip content={<LineTooltip />} />
                 <Legend verticalAlign="top" align="left" iconSize={0} content={<LineLegend />}/>
-                <ReferenceArea x1={activeTooltip} x2={6} y1={0} y2={60} stroke="red" strokeOpacity={1} fill="yellow"/>
+                <ReferenceArea x1={activeTooltip} x2={6} y1={0} y2={60} stroke="red" strokeOpacity={1} fill="#C70039"/>
             </LineChart>
         </ResponsiveContainer>
                     
