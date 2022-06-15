@@ -38,4 +38,20 @@
     return userAverage;
 }
 
-export {getActivity, getAverageSession, getData }
+/**
+ * Gets user performance from the API
+ *
+ * @param {string} id User id
+ * @returns {object} Response
+ */
+ async function getPerformance(id) {
+    let userPerformance = await fetch(`http://localhost:3000/user/${id}/performance`)
+        .then(response => response.json())
+        .then(responseData => {
+            return responseData.data.data
+        })
+       
+    return userPerformance;
+}
+
+export {getActivity, getAverageSession, getData, getPerformance }

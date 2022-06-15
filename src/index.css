@@ -73,6 +73,23 @@
   align-self: flex-start;
 }
 
+.scoreTitle {
+  text-align: start;
+  font-weight: bold;
+}
+
+.score {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 30px);
+}
+.score__text {
+  width: 60px;
+}
+.score__text b {
+  font-size: 1.5em;
+}
+
 .dashboard__greeting {
   text-align: left;
   margin-left: 120px;
@@ -113,7 +130,7 @@
 }
 .chart__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "average performance score";
@@ -121,11 +138,31 @@
 }
 
 .line {
+  width: 270px;
   border-radius: 5px;
   margin: 10px;
   background-color: #FF0000;
   padding: 0 7px;
   grid-area: average;
+}
+
+.radar {
+  width: 270px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #282D30;
+  grid-area: performance;
+}
+
+.radial {
+  width: 270px;
+  position: relative;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #FBFBFB;
+  grid-area: score;
+  display: flex;
+  justify-content: center;
 }
 
 * {

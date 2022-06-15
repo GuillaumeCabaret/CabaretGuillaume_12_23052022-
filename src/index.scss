@@ -1,8 +1,7 @@
 @use "./components/Nav/Nav.scss";
-@use "./components/Card/Card.scss";
-
-@use "./pages/Dashboard.scss";
-
+@use  "./components/Card/Card.scss";
+@use  "./components/Score/Score.scss";
+@use  "./pages/Dashboard.scss";
 *{
     font-family: 'Roboto', sans-serif;
 }

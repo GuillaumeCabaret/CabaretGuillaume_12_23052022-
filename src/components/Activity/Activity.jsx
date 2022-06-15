@@ -8,8 +8,7 @@ import PropTypes from 'prop-types';
  * @param {object} payload the hovered data
  * @returns {node} tooltip in html
  */
-function ActivityTooltip({active, payload}) {
-    
+function ActivityTooltip({active, payload}) {   
     if (active) {
         return <div style={{ backgroundColor: "#FF0000", height: "60px", width: "80px", display: "flex",flexDirection: "column", alignItems: "center", justifyContent: "center", color: "#FFFFFF" }}>
             <p>{payload[0].value} kg</p>
@@ -33,7 +32,7 @@ function Activity(props) {
     })
     return (
         <ResponsiveContainer>
-            <BarChart data={props.activity} >
+            <BarChart data={props.activity}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false}/>
                 <XAxis dataKey="id"/>
                 <YAxis orientation="right"/>
@@ -52,7 +51,8 @@ Activity.propTypes = {
     * Activity data fetched from backend
     */
     activity: PropTypes.arrayOf(PropTypes.shape({
-
+        chartX: PropTypes.number,
+        chartY: PropTypes.number,
     }))
 }
 export default Activity;
