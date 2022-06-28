@@ -1,0 +1,74 @@
+.dashboard__greeting {
+  text-align: left;
+  margin: 50px 0 0 150px;
+}
+.dashboard__greeting span {
+  color: red;
+}
+.dashboard__message {
+  text-align: left;
+  margin: 30px 0 0 155px;
+}
+
+.activity {
+  width: 90%;
+  height: 260px;
+  grid-area: a;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  grid-area: c;
+}
+
+.data {
+  margin-left: 120px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a c" "b c";
+}
+
+.chart__container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "average performance score";
+  grid-area: b;
+  margin-left: 30px;
+}
+
+.line {
+  width: 270px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #FF0000;
+  padding: 0 7px;
+  grid-area: average;
+}
+
+.radar {
+  width: 270px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #282D30;
+  grid-area: performance;
+}
+
+.radial {
+  width: 270px;
+  position: relative;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #FBFBFB;
+  grid-area: score;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=Dashboard.css.map */

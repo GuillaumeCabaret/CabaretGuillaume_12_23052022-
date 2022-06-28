@@ -1,0 +1,18 @@
+.scoreTitle {
+  text-align: start;
+  font-weight: bold;
+}
+
+.score {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 30px);
+}
+.score__text {
+  width: 60px;
+}
+.score__text b {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=Score.css.map */

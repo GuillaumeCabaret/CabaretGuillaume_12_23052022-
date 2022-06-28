@@ -1,0 +1,18 @@
+.scoreTitle {
+    text-align: start;
+    font-weight: bold;
+}
+.score {
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 30px);
+
+    &__text {
+        width: 60px;
+
+        b{
+            font-size: 1.5em;
+        }
+    }
+
+}
