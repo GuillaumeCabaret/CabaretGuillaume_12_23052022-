@@ -1,6 +1,6 @@
 import { RadialBarChart, PolarAngleAxis, RadialBar, Legend, Cell} from "recharts";
 import PropTypes from 'prop-types';
-
+import "./Score.css"
 /**
  * Static Title
  * @component

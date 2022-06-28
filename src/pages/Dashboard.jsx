@@ -3,6 +3,7 @@ import Activity from "../components/Activity/Activity";
 import Performance from "../components/Performance/Performance";
 import Score from "../components/Score/Score";
 import AverageSession from "../components/AverageSession/AverageSession";
+import "./Dashboard.css"
 
 import React from "react";
 

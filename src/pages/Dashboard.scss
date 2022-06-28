@@ -1,7 +1,7 @@
 .dashboard {
     &__greeting {
         text-align: left;
-        margin-left: 120px;
+        margin: 50px 0 0 150px;
 
         span{
             color: red;
@@ -10,14 +10,16 @@
 
     &__message {
         text-align: left;
-        margin-left: 120px;
+        margin: 30px 0 0 155px;
     }
 }
 
 .activity {
-    width: 635px;
+    width: 90%;
     height: 260px;
     grid-area: a;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
 .nutrition {
@@ -38,10 +40,6 @@
 }
 
 .chart {
-    width: 258px;
-    height: 263px;
-    background-color: blue;
-
     &__container {
         display: grid; 
         grid-template-columns: 0.5fr 0.5fr 0.5fr; 
@@ -49,9 +47,11 @@
         gap: 0px 0px; 
         grid-template-areas: 
             "average performance score"; 
-        grid-area: b; 
+        grid-area: b;
+        margin-left: 30px; 
         
     }
+
 }
 
 .line {
