@@ -7,7 +7,12 @@
  async function getData(id) {
     
     let userData =  await fetch(`http://localhost:3000/user/${id}`)
-        .then(response => response.json())
+        .then(response => {
+            if(!response.ok) {
+                throw new Error("User doesn't exist")
+            }
+            return response.json()
+        })
         .then(responseData => { return responseData.data })
     return userData;
 }
