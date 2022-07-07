@@ -32,19 +32,20 @@ class Dashboard extends React.Component{
             this.state = {id : window.location.pathname.substring(1)};
         }
         else {
-            this.state = { id: "12" };
+            this.state = { id: "23", isError : false };
         }
         
     }
 
     componentDidMount() {
-        getData(this.state.id).then(userData => this.setState({ data: userData }));
+        getData(this.state.id).then(userData => this.setState({ data: userData })).catch(() => this.setState({isError : true}));
         getActivity(this.state.id).then(userActivity => this.setState({ activity: userActivity }));
         getAverageSession(this.state.id).then(userAverage => this.setState({average: userAverage}));
         getPerformance(this.state.id).then(userperformance => this.setState({ performance: userperformance }));
     }
     
     render() {
+        if (this.state.isError) return <div className="error">La page ou l'utilisateur est introuvable...</div>
         if (!this.state.data || !this.state.average || !this.state.activity || !this.state.performance) { return null }
         const radialData = [{ score: this.state.data.todayScore }];
         const lineData = this.state.average.sessions;
